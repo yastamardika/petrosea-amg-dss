@@ -13,10 +13,10 @@ logger = logging.getLogger(__name__)
 
 # Database configuration
 DB_CONFIG = {
-    'host': '10.0.6.3',
-    'database': 'petro',
-    'user': 'user-name',
-    'password': 'strong-password',
+    'host': 'ep-fragrant-firefly-a4nf5tz1-pooler.us-east-1.aws.neon.tech',
+    'database': 'neondb',
+    'user': 'neondb_owner',
+    'password': 'npg_py1nX3gzHqEh',
     'port': '5432'
 }
 

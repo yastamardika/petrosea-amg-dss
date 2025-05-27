@@ -11,7 +11,7 @@ import logging
 
 # Page configuration
 st.set_page_config(
-    page_title="Employee Performance DSS - SAW Method",
+    page_title="Asset Management Group - Employee Performance Evaluation using the SAW method in Asset Management Group PT. Petrosea Tbk.",
     page_icon="📊",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -45,10 +45,10 @@ st.markdown("""
 
 # Database configuration
 DB_CONFIG = {
-    'host': 'ep-fragrant-firefly-a4nf5tz1-pooler.us-east-1.aws.neon.tech',
-    'database': 'neondb',
-    'user': 'neondb_owner',
-    'password': 'npg_py1nX3gzHqEh',
+    'host': '10.0.6.3',
+    'database': 'petro',
+    'user': 'user-name',
+    'password': 'strong-password',
     'port': '5432'
 }
 
@@ -318,8 +318,8 @@ def calculate_saw_scores(df, weights):
     return normalized_df
 
 def main():
-    st.markdown('<h1 class="main-header">🏢 Employee Performance Evaluation System</h1>', unsafe_allow_html=True)
-    st.markdown('<h2 style="text-align: center; color: #666;">SAW (Simple Additive Weighting) Method</h2>', unsafe_allow_html=True)
+    st.markdown('<h1 class="main-header">🏢 Asset Management Group - Employee Performance Evaluation at Assets Management Group PT. Petrosea Tbk.</h1>', unsafe_allow_html=True)
+    st.markdown('<h2 style="text-align: center; color: #666;">using SAW (Simple Additive Weighting) Method</h2>', unsafe_allow_html=True)
     
     # Sidebar for configuration
     st.sidebar.header("⚙️ Configuration")
