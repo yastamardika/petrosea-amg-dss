@@ -1,0 +1,22 @@
+services:
+  python-seeder:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: employee_seeder
+    environment:
+      - DB_HOST=local_pgdb
+      - DB_DATABASE=petro
+      - DB_USER=user-name
+      - DB_PASSWORD=strong-password
+      - DB_PORT=5432
+    volumes:
+      - ./postgresql_seeding_script.py:/app/postgresql_seeding_script.py
+    networks:
+      - petro-postgre_default
+    command: ["python", "/app/postgresql_seeding_script.py"]
+    restart: "no"
+
+networks:
+  petro-postgre_default:
+    external: true
