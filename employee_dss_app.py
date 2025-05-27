@@ -318,7 +318,7 @@ def calculate_saw_scores(df, weights):
     return normalized_df
 
 def main():
-    st.markdown('<h1 class="main-header">🏢 Asset Management Group - Employee Performance Evaluation at Assets Management Group PT. Petrosea Tbk.</h1>', unsafe_allow_html=True)
+    st.markdown('<h1 class="main-header">🏢 Asset Management Group - Employee Performance Evaluation at PT. Petrosea Tbk.</h1>', unsafe_allow_html=True)
     st.markdown('<h2 style="text-align: center; color: #666;">using SAW (Simple Additive Weighting) Method</h2>', unsafe_allow_html=True)
     
     # Sidebar for configuration
